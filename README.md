@@ -14,4 +14,12 @@ cd..
 ```
 ls
 ```
+- Curl Command
+```
+curl "http://shakespeare.mit.edu/romeo_juliet/full.html" -O "data.txt"
+```
+- Command to Find Most Common Words
+```
+$  tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr > result.txt
+```
     
